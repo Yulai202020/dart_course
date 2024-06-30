@@ -1,8 +1,13 @@
 import 'dart:math';
 
-class Point {
+class Point_2d {
   double x = 0;
   double y = 0;
+
+  Point_2d(this.x, this.y);
+}
+
+class Point extends Point_2d {
   double z = 0; // if z is not inited its will be 0
 
   double sum() {
@@ -18,7 +23,7 @@ class Point {
     return sqrt(dx*dx + dy*dy + dz*dz);
   }
 
-  Point(this.x, this.y, this.z);
+  Point(super.x, super.y, this.z);
 }
 
 void main() {
