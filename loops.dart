@@ -14,11 +14,10 @@ void main() {
     }
 
     // this loop first do somethink then think expression is true or false
+    count = 0;
+    var list2 = [10, 11, 12, 13];
     do {
-        // do somethink
-    } while (
-      // some expression
-    );
-
-
+      print(list2[count]);
+      count++;
+    } while (count < list2.length);
 }

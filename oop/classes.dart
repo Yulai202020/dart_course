@@ -10,8 +10,17 @@ class Point {
     return result;
   }
 
+  double distance(Point a, Point b) {
+    double dx = a.x - b.x;
+    double dy = a.y - b.y;
+    double dz = a.z - b.z;
+
+    return sqrt(dx*dx + dy*dy + dz*dz);
+  }
+
   Point(this.x, this.y, this.z);
 }
+
 void main() {
   var some_point = Point(1, 3, 4);
   print(some_point.sum());
